@@ -1,0 +1,46 @@
+[
+  {
+    "content": "FASE 0 (POC/Forensik): Ukur ketidaksinkronan lintas portal dengan data nyata",
+    "status": "completed"
+  },
+  {
+    "content": "FASE 1: Backend core/sku_bridge.py — SSOT pemetaan platform_sku_id ↔ master (koleksi mandiri, bukan per-sesi impor) + mesin usulan cocok (nama+variasi→warna/ukuran) + backfill semua pesanan",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 1: Perbaiki RC-2 kosakata status — importer tulis 'unallocated' tapi antrean gudang cari 'pending_fulfillment' (559 pesanan tak terlihat gudang)",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 1: Backend routes/sku_bridge.py — endpoint /api/sku-bridge (unmapped, suggest, map, auto-map, unmap, health)",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 2: Backend routes/sync_audit.py — audit sinkronisasi lintas portal sebagai endpoint hidup + perbaikan aman (repair)",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 3: Frontend SkuBridgeModule.jsx — layar 'Jembatan SKU (Marketing ↔ Gudang)' dengan antrean, usulan, peta 1-klik, auto-map",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 3: Frontend SyncAuditModule.jsx — layar 'Kesehatan Sinkronisasi Data' + tombol perbaikan",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 3: Daftarkan kedua layar ke sidebar/menu registry + rebuild static bundle",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 4: Gate INV-F29 scripts/verify_sinkronisasi_marketing_gudang.py + jalankan scripts/gate.sh (harus tetap HIJAU)",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 5: Uji E2E via testing_agent_v3 (backend + frontend) & perbaiki SEMUA bug yang dilaporkan",
+    "status": "pending"
+  },
+  {
+    "content": "FASE 5: Perbarui plan.md + memory/ROADMAP.md + HANDOFF.md (sesi #20)",
+    "status": "pending"
+  }
+]
